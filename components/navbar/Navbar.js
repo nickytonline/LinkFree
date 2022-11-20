@@ -1,15 +1,18 @@
 import { useRouter } from "next/router";
+import Image from "next/legacy/image";
 import { useState } from "react";
+import { useSession, signIn, signOut } from "next-auth/react";
+
 import NavLink from "./NavLink";
 import Link from "next/link";
 import app from "../../config/app.json";
-import Image from "next/legacy/image";
 
 export default function Navbar() {
+  const { data: session } = useSession();
   const [isOpen, setIsOpen] = useState(false);
 
   const router = useRouter();
-  const primary = [
+  let primary = [
     {
       name: "Home",
       url: "/",
@@ -27,6 +30,16 @@ export default function Navbar() {
       url: "/events",
     },
   ];
+
+  if (session) {
+    primary = [
+      ...primary,
+      { name: `Signed in as ${session.user.email}`, url: "" },
+    ];
+  }
+  if (!session) {
+    primary = [...primary, { name: "Sign in", url: "" }];
+  }
 
   return (
     <div className="min-h-full">
