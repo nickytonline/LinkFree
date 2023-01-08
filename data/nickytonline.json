@@ -1,0 +1,50 @@
+{
+  "name": "Nick Taylor",
+  "displayStatsPublic": true,
+  "type": "personal",
+  "bio": "",
+  "avatar": "https://github.com/nickytonline.png",
+  "tags": [""],
+  "socials": [
+    {
+      "icon": "FaTwitter",
+      "url": "https://twitter.com/nickytonline"
+    },
+    {
+      "icon": "FaYoutube",
+      "url": "https://www.youtube.com/@iamdeveloperdotcom"
+    }
+  ],
+  "links": [
+    {
+      "name": "Twitter",
+      "url": "https://twitter.com/nickytonline",
+      "icon": "FaTwitter"
+    },
+    {
+      "name": "LinkedIn",
+      "url": "https://www.linkedin.com/in/nickytonline/",
+      "icon": "FaLinkedin"
+    },
+    {
+      "name": "GitHub",
+      "url": "https://github.com/nickytonline",
+      "icon": "FaGithub"
+    },
+    {
+      "name": "Twitch",
+      "url": "https://twitch.tv/nickytonline",
+      "icon": "FaTwitch"
+    },
+    {
+      "name": "YouTube",
+      "url": "https://www.youtube.com/@iamdeveloperdotcom",
+      "icon": "FaYoutube"
+    },
+    {
+      "name": "Instagram",
+      "url": "https://www.instagram.com/nickytonline",
+      "icon": "FaInstagram"
+    }
+  ]
+}
